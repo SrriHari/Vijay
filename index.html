@@ -1,14 +1,17 @@
-<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Share+Tech&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Share+Tech&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 fontFamily: { sans: "Share Tech" },
                 extend: {
-                    fontFamily:{
-                        "btn-sans":"Quicksand"
+                    fontFamily: {
+                        "btn-sans": "Quicksand"
                     }
                 }
             }
@@ -18,17 +21,20 @@
 
 
 <body class="flex items-center flex-col bg-amber-50">
-    <p class="text-5xl font-bold pt-10 text-blue-500">Welcome to Srri's World</p>
-    <a href="./public/about.html">
-        <p class="text-2xl">Srri's Web</p><img src="./assets/images/vj.jpg" />
+    <p class="text-5xl font-bold pt-10 text-[#176B87]">Welcome to Srri's World</p>
+    <a href="./public/about.html" class="flex items-center flex-col">
+        <p class="text-2xl">Srri's Web</p><img class="w-1/2 relative rounded-2xl"
+            src="https://srrihari.github.io/Vijay/assets/images/vj.jpg" />
     </a>
     <hr />
     <a href="./public/contact.html">Contact me</a>
     <br />
     <div style="display:flex;flex-direction: column;align-items: center;">
         <p id="sample">fiqnaq-Fajbob-wyzso0</p>
-        <button type="submit" class="font-btn-sans bg-black text-white font-bold rounded-md px-4 py-2 text-lg" onclick="copyText()">Copy</button>
+        <button type="submit" class="font-btn-sans bg-black text-white font-bold rounded-md px-4 py-2 text-lg "
+            onclick="copyText()">Copy</button>
     </div>
+    <br/>
 
     <script>
         function copyText() {
